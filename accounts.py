@@ -17,3 +17,4 @@ def login(name, password):
         if key == accounts[password]:
             return True
      return False
+     #Accepting credentials
