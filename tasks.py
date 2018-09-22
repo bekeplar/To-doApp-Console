@@ -21,3 +21,9 @@ def mark_as_finished(task):
 
     task_name = task_list.name(task)
     todo_list[task_name] = task + " [finished]"
+
+
+def delete_all_tasks():
+    """Deleting the entire list on the user's account."""
+
+    todo_list.clear()    
