@@ -9,10 +9,15 @@ def create_task(task):
     todo_list.append(task)
 
 
- def delete_task(task):
+def delete_task(task):
     """
     Deletes a specific task from the todo list"""
 
     todo_list.remove(task)   
 
 
+def mark_as_finished(task):
+    """Makks a task from the to-do list as finished"""
+
+    task_name = task_list.name(task)
+    todo_list[task_name] = task + " [finished]"
