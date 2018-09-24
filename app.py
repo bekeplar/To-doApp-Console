@@ -1,4 +1,3 @@
-import time
 from tasks import *
 from accounts import *
 
@@ -20,17 +19,19 @@ if __name__ == "__main__":
                 selection = input("Your selection: ")
                 if selection == "1":
                     task = input("Please enter your task here:")
-                    create_task(task)
+                    
                 elif selection == "2":
                     print(todo_list)
                     task = input("Please enter the task you want to delete here: ")
-                    delete_task(task)
+                
+                    print("your task has been successfully completed")
                 elif selection == "3":
-                    delete_all_tasks()
+                    
+                    print("Your task has been successfully deleted")
                 elif selection == "4":
                     print(todo_list)
                     task = input("Please enter the task you want to mark finished: ")
-                    mark_as_finished(task)
+                    print("Your tasks have been successfully deleted")
                 else:
                     print("Please enter a selection from the listed options")
             else:
